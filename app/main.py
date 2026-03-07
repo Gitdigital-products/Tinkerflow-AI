@@ -183,12 +183,13 @@ async def chat_completions(
         return response
         
     except Exception as e:
-        logger.error(f"Chat completion failed: {e}")
+        # Log full error details server-side, including stack trace
+        logger.exception("Chat completion failed")
         
-        # Return OpenAI-style error
+        # Return OpenAI-style error with a generic message to avoid leaking internals
         error_response = {
             "error": {
-                "message": str(e),
+                "message": "An internal error occurred while processing the chat completion request.",
                 "type": "api_error",
                 "code": 500
             }
