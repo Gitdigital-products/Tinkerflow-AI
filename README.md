@@ -10,9 +10,9 @@
 ![tinkerflow.security.integrity](https://img.shields.io/badge/tinkerflow.security.integrity-Integrity--Checked%20Actions-e05d44)
 
 https://www.buymeacoffee.com/rickcreator87
-`markdown
+
 ![Buy Me a Coffee](https://www.buymeacoffee.com/rickcreator87)
-`
+
 
 ⚙️ 
 Paste this:
